@@ -1,0 +1,22 @@
+{
+    "name": "a-or-b",
+    "description": "Pick A or B to rate images. Simple.",
+    "version": "0.1.0",
+    "dependencies": {
+        "express": "3.3.x",
+        "hbs": "2.3.x",
+        "redis": "0.8.x",
+        "hiredis": "*"
+    },
+    "contributors": [
+        {
+            "name": "Christopher Carter",
+            "email": "chris@gibsonsec.org"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/plausibility/a-or-b"
+    },
+    "license": "MIT"
+}
