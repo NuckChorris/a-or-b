@@ -1,7 +1,7 @@
 {
     "name": "a-or-b",
     "description": "Pick A or B to rate images. Simple.",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "dependencies": {
         "express": "3.3.x",
         "hbs": "2.3.x",

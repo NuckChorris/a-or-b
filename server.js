@@ -47,16 +47,18 @@ app.post("/~flag", function (req, res) {
 });
 
 app.get('/~get', function (req, res) {
+    thing_a = new elo.Thing("a", 1600);
+    thing_b = new elo.Thing("b", 1600);
     res.json({
         "a": {
             "href": "",
-            "expect": 0,
-            "id": ""
+            "expect": thing_a.expectancy(thing_b),
+            "id": thing_a.id
         },
         "b": {
             "href": "",
-            "expect": 0,
-            "id": ""
+            "expect": thing_b.expectancy(thing_a),
+            "id": thing_b.id
         }
     });
 });

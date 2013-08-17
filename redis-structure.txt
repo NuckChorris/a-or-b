@@ -1,0 +1,14 @@
+This file basically just lists all the redis keys that are used.
+
+# misc keys
+a-or-b:id  => the current highest id we're using to identify the next Thing
+a-or-b:all => hash of all alive Things (id: id)
+a-or-b:flagged => hash of flagged Things (id: timestamp of flag)
+
+# Thing upload related
+a-or-b:$id:file => the base file name that will be appended to the image_prefix
+a-or-b:$id:rating => the Elo rating of the image (base)
+a-or-b:$id:info => 140 characters of information about the thing
+a-or-b:$id:time => timestamp of upload
+a-or-b:$id:ip => the IP address of the uploader
+a-or-b:$id:user-agent => the user-agent of the uploader
